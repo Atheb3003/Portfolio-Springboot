@@ -1,8 +1,9 @@
 <h1 align="center">🌐 Web Portfolio - Spring Boot</h1>
 
-<p align="center">
-  🌐 <b>Live Demo:</b> <a href="https://backendprojects.duckdns.org/" target="_blank">https://backendprojects.duckdns.org/</a>
-</p>
+## 🚀 Deployment
+- 🖥️ Server setup: Fully configured by me on my own production server  
+- 🌐 Production URL: [https://backendprojects.duckdns.org/](https://backendprojects.duckdns.org/
+- ☁️ Ready for future scaling or cloud deployment
 
 <p align="center">
   <b>My personal web portfolio built with Spring Boot</b><br>
