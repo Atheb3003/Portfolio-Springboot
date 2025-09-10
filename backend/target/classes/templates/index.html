@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Desarrollador Web</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🚀 <span>MiPortfolio</span></div>
+    <nav class="nav-links">
+      <a href="#about">Sobre mí</a>
+      <a href="#featured">Destacados</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+    <button class="menu-toggle">☰</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content reveal">
+      <h1>Hola, soy <span class="gradient-text">Desarrollador Web</span></h1>
+      <p>Creo experiencias digitales modernas, rápidas y atractivas. Backend, APIs y proyectos escalables.</p>
+      <a href="#projects" class="btn btn-primary glow">Ver proyectos</a>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="about" class="section reveal">
+    <h2>Sobre mí</h2>
+    <p>Soy un desarrollador especializado en <b>backend</b> y <b>APIs</b>, apasionado por la tecnología y el diseño. Me
+      gusta transformar ideas en productos reales, cuidando tanto la arquitectura como la experiencia del usuario.</p>
+  </section>
+
+  <!-- Proyectos destacados -->
+  <section id="featured" class="section reveal">
+    <h2>Proyectos destacados</h2>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide" style="background-image: url('https://picsum.photos/1000/400?1');">
+          <div class="slide-overlay">
+            <h3>Proyecto Destacado 1</h3>
+            <p>#backend #api</p>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('https://picsum.photos/1000/400?2');">
+          <div class="slide-overlay">
+            <h3>Proyecto Destacado 2</h3>
+            <p>#frontend</p>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('https://picsum.photos/1000/400?3');">
+          <div class="slide-overlay">
+            <h3>Proyecto Destacado 3</h3>
+            <p>#fullstack</p>
+          </div>
+        </div>
+      </div>
+      <button class="prev">‹</button>
+      <button class="next">›</button>
+    </div>
+  </section>
+
+  <!-- Proyectos con filtro -->
+  <section id="projects" class="section reveal">
+    <h2>Proyectos</h2>
+    <div class="filters">
+      <button data-filter="all" class="active">Todos</button>
+      <button data-filter="backend">Backend</button>
+      <button data-filter="frontend">Frontend</button>
+      <button data-filter="api">API</button>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card" data-tags="backend api">
+        <div class="project-image" style="background-image: url('https://picsum.photos/400/200?1');"></div>
+        <div class="project-body">
+          <h3>Proyecto 1</h3>
+          <p>API REST optimizada para alto rendimiento.</p>
+          <span class="tags">#backend #api</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-tags="frontend">
+        <div class="project-image" style="background-image: url('https://picsum.photos/400/200?2');"></div>
+        <div class="project-body">
+          <h3>Proyecto 2</h3>
+          <p>SPA con React y animaciones fluidas.</p>
+          <span class="tags">#frontend</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-tags="backend frontend">
+        <div class="project-image" style="background-image: url('https://picsum.photos/400/200?3');"></div>
+        <div class="project-body">
+          <h3>Proyecto 3</h3>
+          <p>Plataforma fullstack escalable.</p>
+          <span class="tags">#backend #frontend</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="section reveal">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu email" required>
+      <textarea rows="5" placeholder="Tu mensaje"></textarea>
+      <button type="submit" class="btn btn-primary glow">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Mi Portfolio</p>
+  </footer>
+
+  <script th:src="@{/js/script.js}"></script>
+</body>
+
+</html>
