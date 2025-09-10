@@ -2,7 +2,7 @@
 
 ## 🚀 Deployment
 - 🖥️ Server setup: Fully configured by me on my own production server  
-- 🌐 Production URL: [https://backendprojects.duckdns.org/](https://backendprojects.duckdns.org/
+- 🌐 Production URL: https://backendprojects.duckdns.org/
 - ☁️ Ready for future scaling or cloud deployment
 
 <p align="center">
