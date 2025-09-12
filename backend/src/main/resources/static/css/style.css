@@ -177,6 +177,19 @@ input:focus, textarea:focus {
 
 /* Footer */
 footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: var(--muted); }
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1; /* el contenido ocupa todo el espacio disponible */
+}
+footer {
+  margin-top: auto; /* se queda al final */
+}
 
 /* Reveal animation */
 .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s ease-out; }

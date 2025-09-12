@@ -1,15 +1,72 @@
 <!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org">
-
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Desarrollador Web</title>
+  <title>Detalles del Proyecto | MiPortfolio</title>
   <link rel="stylesheet" th:href="@{/css/style.css}">
+  <link rel="stylesheet" hth:href="@{/css/projectDetails.css}">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🚀 <span>MiPortfolio</span></div>
+    <nav class="nav-links">
+      <a href="index.html#about">Sobre mí</a>
+      <a href="index.html#featured">Destacados</a>
+      <a href="index.html#projects">Proyectos</a>
+      <a href="index.html#contact">Contacto</a>
+    </nav>
+    <button class="menu-toggle">☰</button>
+  </header>
+
+  
+  <main>
+      <!-- Contenido Detalles -->
+      <section class="section project-details reveal">
+        <div class="details-container">
+          <!-- Galería -->
+          <div class="gallery">
+            <div class="main-image">
+              <img id="mainImage" src="https://picsum.photos/600/400?1" alt="Imagen principal">
+            </div>
+            <div class="thumbnails">
+              <img src="https://picsum.photos/100/70?1" data-full="https://picsum.photos/600/400?1" class="active">
+              <img src="https://picsum.photos/100/70?2" data-full="https://picsum.photos/600/400?2">
+              <img src="https://picsum.photos/100/70?3" data-full="https://picsum.photos/600/400?3">
+              <img src="https://picsum.photos/100/70?4" data-full="https://picsum.photos/600/400?4">
+            </div>
+          </div>
     
+          <!-- Info Proyecto -->
+          <div class="project-info">
+            <h2>Nombre del Proyecto</h2>
+            <p>
+              Este proyecto consiste en una plataforma fullstack diseñada con arquitectura hexagonal,
+              integrando APIs escalables y un frontend moderno. Se centra en el rendimiento y en la
+              experiencia de usuario.
+            </p>
+            <div class="tags">
+              <span>#Java</span>
+              <span>#ArquitecturaHexagonal</span>
+              <span>#SpringBoot</span>
+              <span>#React</span>
+            </div>
+            <a href="https://github.com/usuario/proyecto" target="_blank" class="btn btn-primary glow proyect-link">Ver proyecto</a>
+          </div>
+        </div>
+      </section>
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mi Portfolio</p>
+  </footer>
+
+  <script th:src="@{/js/script.js}"></script>
+  <script th:src="@{/js/projectDetails.js}"></script>
 </body>
 </html>
